@@ -102,7 +102,7 @@ function Languages() {
                             {...provided.draggableProps}
                             {...provided.dragHandleProps}
                           >
-                            <Box sx={{ display: "flex", alignItems: "center" }}>
+                            <Box sx={{ display: "flex", alignItems: "center", marginBottom:"1rem" }}>
                               <Typography className={styles.box}>
                                 {language.name}
                               </Typography>
