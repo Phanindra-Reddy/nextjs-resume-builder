@@ -21,3 +21,9 @@
   margin-right:2rem;
   width:100mm;
 }
+
+.skillBox{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+  grid-gap:0.5rem;
+}

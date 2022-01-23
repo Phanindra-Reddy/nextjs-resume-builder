@@ -468,20 +468,20 @@ function Template1() {
             <Box sx={{ color: "#555", display: "flex" }}>
               {hobbies.items.length > 0 ? (
                 <>
-                  {hobbies.items.map((interest, i) => {
+                  {hobbies.items.map((hobby, i) => {
                     return (
                       <Typography key={i} sx={{ marginRight: "2rem" }}>
-                        {interest.name}
+                        {hobby.name}
                       </Typography>
                     );
                   })}
                 </>
               ) : (
                 <>
-                  {localStateHobbies.map((interest, i) => {
+                  {localStateHobbies.map((hobby, i) => {
                     return (
                       <Typography key={i} sx={{ marginRight: "2rem" }}>
-                        {interest}
+                        {hobby}
                       </Typography>
                     );
                   })}

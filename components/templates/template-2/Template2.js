@@ -335,25 +335,25 @@ function Template2() {
               Interests
             </Typography>
             <Box sx={{ color: "#555", display: "flex" }}>
-              {skills.items.length > 0 ? (
+              {hobbies.items.length > 0 ? (
                 <>
-                  {hobbies.items.map((interest, i) => {
+                  {hobbies.items.map((hobby, i) => {
                     return (
                       <Typography
-                        key={interest.id}
+                        key={hobby.id}
                         sx={{ marginRight: "2rem" }}
                       >
-                        {interest.name}
+                        {hobby.name}
                       </Typography>
                     );
                   })}
                 </>
               ) : (
                 <>
-                  {localStateHobbies.map((interest, i) => {
+                  {localStateHobbies.map((hobby, i) => {
                     return (
                       <Typography key={i} sx={{ marginRight: "2rem" }}>
-                        {interest}
+                        {hobby}
                       </Typography>
                     );
                   })}
@@ -418,11 +418,12 @@ function Template2() {
               Skills
             </Typography>
             <Box
-              sx={{
-                display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
-                gridGap: "0.8rem",
-              }}
+              // sx={{
+              //   display: "grid",
+              //   gridTemplateColumns: "repeat(3, 1fr)",
+              //   gridGap: "0.7rem",
+              // }}
+              className={styles.skillBox}
             >
               {skills.items.length > 0 ? (
                 <>
