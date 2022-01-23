@@ -1,0 +1,63 @@
+.LeftSideBar {
+  padding: 5rem;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin:"0 0 0 1rem"; */
+}
+.ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    max-width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.ul::-webkit-scrollbar {
+    background: transparent;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+}
+.li {
+    /* background: #4a5568; */
+    background: #EDF2F7;
+    color: #111;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 5px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.li:hover{
+    /* background: #EDF2F7; */
+    background: #4a5568;
+    color: #fff;
+}
+.active{
+    /* background: #00BCD4; */
+    background: #4a5568;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 5px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+@media print{
+    .leftSideDrawer, .rightSideDrawer{
+        display: none;
+    }
+}
+

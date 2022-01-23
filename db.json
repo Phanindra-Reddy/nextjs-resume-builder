@@ -1,0 +1,187 @@
+{
+  "sampleData": {
+    "profile": {
+      "firstName": "Phanindra",
+      "lastName": "Reddy",
+      "photoUrl": "https://avatars.githubusercontent.com/u/38823874?v=4",
+      "role": "Front-End Developer",
+      "objective": "To obtain a job within my chosen field that will challenge me and allow me to use my education, skills and past experiences in a way that is mutually beneficial to both myself and my employer and allow for future growth and advancement.",
+      "email": "query.phani@gmail.com",
+      "phone": "+91 9998887776",
+      "website": "phanindra.me",
+      "linkedin": "linked.in/phanindra",
+      "github": "github.com/phanindra",
+      "address": "2/12 Jubliee Hills",
+      "postalCode": "522201",
+      "city": "Warangal",
+      "country": "India"
+    },
+    "aboutme": {
+      "enable": true,
+      "description": "A Javascript developer with 3.5 years of experience in Django, Flask for Retail eCommerce, POS and Storage domain."
+    },
+    "workExperience": {
+      "enable": true,
+      "items": [
+        {
+          "id": "",
+          "compnayName": "Some Comapny",
+          "compnayUrl": "somecompany.com",
+          "role": "Front-End Developer",
+          "startDate": "jun-2016",
+          "endDate": "nov-2018",
+          "description": "To obtain a job within my chosen field that will challenge me and allow me to use my education, skills and past experiences in a way that is mutually beneficial to both myself and my employer and allow for future growth and advancement."
+        },
+        {
+          "id": "",
+          "compnayName": "Another Comapny",
+          "compnayUrl": "anothercompany.com",
+          "role": "Full Stack Developer",
+          "startDate": "nov-2018",
+          "endDate": "present",
+          "description": "To obtain a job within my chosen field that will challenge me and allow me to use my education, skills and past experiences in a way that is mutually beneficial to both myself and my employer and allow for future growth and advancement."
+        }
+      ]
+    },
+    "education": {
+      "enable": true,
+      "items": [
+        {
+          "id": "edu-001",
+          "institution": "JNTU University",
+          "major": "Undergraduate in CSE",
+          "grade": "7.12",
+          "startDate": "jun-2012",
+          "endDate": "may-2016",
+          "city": "Hyderabad"
+        },
+        {
+          "id": "edu-002",
+          "institution": "Narayana jr college",
+          "major": "Intermediate",
+          "grade": "9.3",
+          "startDate": "jun-2010",
+          "endDate": "may-2012",
+          "city": "Hyderabad"
+        }
+      ]
+    },
+    "awards": {
+      "enable": false,
+      "items": [
+        {
+          "id": "award-001",
+          "title": "Cast Member of a Musical - Oklahoma",
+          "subtitle": "Winter, 2007",
+          "description": "To obtain a job within my chosen field that will challenge me and allow me to use my education, skills and past experiences in a way that is mutually beneficial to both myself and my employer and allow for future growth and advancement."
+        }
+      ]
+    },
+    "cerification": {
+      "enable": false,
+      "items": [
+        {
+          "id": "",
+          "name": "CS50: Intro to Computer Science",
+          "url": "drive.google.com/somecertificate.png/jpg/jpeg",
+          "authority": "JNTU University",
+          "description": "To obtain a job within my chosen field that will challenge me and allow me to use my education, skills and past experiences in a way that is mutually beneficial to both myself and my employer and allow for future growth and advancement."
+        }
+      ]
+    },
+    "skills": {
+      "enable": true,
+      "items": [
+        {
+          "id": "skill-001",
+          "name": "html"
+        },
+        {
+          "id": "skill-002",
+          "name": "css"
+        },
+        {
+          "id": "skill-003",
+          "name": "javascript"
+        },
+        {
+          "id": "skill-004",
+          "name": "react.js"
+        },
+        {
+          "id": "skill-005",
+          "name": "next.js"
+        },
+        {
+          "id": "skill-006",
+          "name": "java"
+        },
+        {
+          "id": "skill-007",
+          "name": "python"
+        },
+        {
+          "id": "skill-008",
+          "name": "aws"
+        }
+      ]
+    },
+    "hobbies": {
+      "enable": false,
+      "items": [
+        {
+          "id": "hobby-001",
+          "name": "Travelling"
+        },
+        {
+          "id": "hobby-002",
+          "name": "Dancing"
+        },
+        {
+          "id": "hobby-003",
+          "name": "Painting"
+        }
+      ]
+    },
+    "languages": {
+      "enable": true,
+      "items": [
+        {
+          "id": "lan-001",
+          "name": "English"
+        },
+        {
+          "id": "lan-002",
+          "name": "Hindi"
+        },
+        {
+          "id": "lan-003",
+          "name": "Telugu"
+        }
+      ]
+    },
+    "projects": {
+      "enable": true,
+      "items": [
+        {
+          "id": "project-001",
+          "title": "Covid Tracker",
+          "demoUrl": "",
+          "desciption": ""
+        },
+        {
+          "id": "project-002",
+          "title": "Youtube Clone",
+          "demoUrl": "",
+          "desciption": ""
+        },
+        {
+          "id": "project-003",
+          "title": "Resume Builder",
+          "demoUrl": "",
+          "desciption": ""
+        }
+      ]
+    }
+  }
+}

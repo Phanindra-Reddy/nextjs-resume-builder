@@ -1,116 +1,134 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-
-.footer {
+.dashboard {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
+.profileDiv {
   margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.dashboardDiv {
+  margin: 2rem;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.para {
+  text-transform: uppercase;
+  color: #9f8096;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
-.card p {
-  margin: 0;
+.colorsDiv {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-row-gap: 0.75rem;
+  row-gap: 0.75rem;
+  grid-column-gap: 0.5rem;
+  column-gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.circle,
+.primaryCircle {
+  box-sizing: border-box;
+  border: 0 solid #e2e8f0;
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  cursor: pointer;
+  border-width: 1px;
+  border-radius: 50%;
+}
+
+.primaryCircle {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-right: 0.5rem;
+}
+
+.circle:hover {
+  opacity: 0.5;
+}
+
+.input {
+  width: 100%;
+  background-color: #edf2f7;
+  padding: 0.75rem 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  border: none;
+  margin-top: 0.25rem;
+}
+
+.input:focus {
+  background-color: white;
+  border: 0.1px solid #4a5568;
+}
+
+.fontsDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.fonts {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-size: 1.25rem;
-  line-height: 1.5;
+  cursor: pointer;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  box-sizing: border-box;
+  border: 0 solid #e2e8f0;
+  margin-bottom: 1rem;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.imageDiv {
+  cursor: pointer;
+  box-shadow: rgba(11, 17, 24, 0.3) 0px 0px 0px 1px;
+}
+.imageDiv:hover,
+.imageActive {
+  cursor: pointer;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.box {
+  width: 100%;
+  background-color: #edf2f7;
+  padding: 0.75rem 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  border: none;
+  margin-bottom: 0.5rem ;
+}
+
+@media print {
+  .dashboardDiv {
+    border: none;
+    overflow: inherit;
+    margin: 0;
+    transform: none;
   }
 }
