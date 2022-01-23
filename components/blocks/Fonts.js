@@ -10,9 +10,6 @@ function Fonts() {
   const dispatch = useDispatch();
   const [font, setFont] = useState("Montserrat");
 
-  // useEffect(() => {
-  //   console.log(font);
-  // },[font])
 
   const handleClick = (value) => {
     navigator.clipboard.writeText(value);

@@ -22,7 +22,6 @@ function Projects() {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.projects);
   const { items } = state;
-  console.log(items);
 
   const validationSchema = Yup.object({
     title: Yup.string().required("Required!"),

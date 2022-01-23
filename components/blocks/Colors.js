@@ -18,7 +18,6 @@ function Colors() {
     info(`${value} has been copied to the clipboard.`, infoNotification);
     setSecondaryColor(value);
     //dispatch(selectColors(primaryColor, secondaryColor))
-    console.log(primaryColor, secondaryColor);
   };
   return (
     <div className={styles.profileDiv}>
