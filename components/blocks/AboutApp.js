@@ -6,6 +6,18 @@ import Link from "next/link";
 import { useSelector } from "react-redux";
 
 function AboutApp() {
+  const [visited, setVisited] = React.useState(0);
+  React.useEffect(() => {
+    let fetchRes = fetch(
+      "https://api.countapi.xyz/hit/mpr-resume-builder.vercel.app/key"
+    );
+    fetchRes
+      .then((res) => res.json())
+      .then((d) => {
+        setVisited(d.value)
+      });
+  },[]);
+ 
   const state = useSelector((state) => state.profile);
   const { firstName, lastName } = state;
   React.useEffect(() => {
@@ -54,8 +66,20 @@ function AboutApp() {
         }}
       >
         <Typography>
-          Don&apos;t worry about your personal data as it stores in localstorage of  your web browser.
+          Don&apos;t worry about your personal data as it stores in localstorage
+          of your web browser.
         </Typography>
+      </div>
+
+      <div
+        className={styles.profileDiv}
+        style={{
+          border: "1px solid #4A5568",
+          padding: "0.5rem",
+          borderRadius: "0.5rem",
+        }}
+      >
+         <Typography>Visited: <strong>{visited}</strong></Typography>
       </div>
     </>
   );
