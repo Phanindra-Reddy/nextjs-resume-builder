@@ -26,6 +26,7 @@
     "react-markdown": "^7.1.2",
     "react-notifications-component": "^3.1.0",
     "react-redux": "^7.2.6",
+    "react-use": "^17.3.2",
     "redux": "^4.1.2",
     "remark-gfm": "^3.0.1",
     "uuid": "^8.3.2",
