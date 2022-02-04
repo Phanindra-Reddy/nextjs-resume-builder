@@ -13,7 +13,6 @@ store.subscribe(
 
 function MyApp({ Component, pageProps }) {
   const windowSize = useWindowSize();
-  console.log(windowSize);
   return (
     <Provider store={store}>
       {windowSize.width <= 960 ? (
